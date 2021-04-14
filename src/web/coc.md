@@ -1,5 +1,5 @@
 ---
-layout: default.njk
+layout: layouts/page.njk
 page:
   title: The Hallway Track - Code of Conduct
   description: The Hallway Track Code of Conduct. tl;dr Be Excellent to one another.

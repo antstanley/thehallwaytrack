@@ -2,6 +2,8 @@
 
 @tailwind components;
 
+@tailwind utilities;
+
 .bg-base {
   background-color: #cccccc;
 }
@@ -104,12 +106,20 @@
   font-family: 'Lucida Console', Monaco, monospace;
 }
 
+.logo-font {
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
 .logo {
   background-image: url('/img/hallway_dark.png');
 }
 
-.h-header {
-  height: 90vh;
+.bg-logo {
+  background-color: #222;
+}
+
+.fg-logo {
+  color: #fff;
 }
 
 .shadow-button {
@@ -156,9 +166,22 @@
   .logo {
     background-image: url('/img/hallway_light.png');
   }
+
+  .bg-logo {
+    background-color: #ccc;
+  }
+
+  .fg-logo {
+    color: #000;
+  }
+
   .shadow-button {
     box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.6);
   }
 }
 
-@tailwind utilities;
+@screen md {
+  .h-header {
+    height: 80vh;
+  }
+}

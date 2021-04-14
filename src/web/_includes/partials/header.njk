@@ -1,26 +1,26 @@
 
-<header class="w-full h-header">
+<header class="w-full">
     {% if page.url !== '/' %}
-        <div class="mx-auto container h-full">
+        <div class="mx-auto container mt-8">
             <div class="flex flex-wrap justify-center md:justify-between lg:justify-between xl:justify-between">
                     <div class="align-middle">
-                        <a href="/">
-                            <div class="logo w-48 h-48 py-4"></div>
-                        </a>
+                        <a class="logo-font text-xl" href="/">the <span class="font-extrabold">hallway</span> track</a>
                     </div>
                 {% include 'partials/navigation.njk' %}
             </div>
         </div>
     {% else %}
-        <div class="container mx-auto h-full flex flex-wrap items-center">
+        <div class="container mx-auto flex flex-wrap items-center mt-16 md:mt-0 h-header">
             <div class="w-full md:w-1/3">
-                <div class="logo w-72 h-72 p-4 mx-auto"></div>
+                <div class="w-52 lg:w-72 h-52 lg:h-72 mx-auto">
+                    {% include 'partials/logo.njk' %}
+                </div>
             </div>
             <div class="w-full md:w-1/3">
                 <div class="max-w-2xl p-8 md:p-2">
-                    <h1 class="text-7xl header-font font-bold">Welcome</h1>
-                    <div class="mt-4 text-justify">
-                        <p class="my-2 text-xl">{{ site.description }}</p> 
+                    <h1 class="text-5xl md:text-4xl lg:text-7xl header-font font-bold">Welcome</h1>
+                    <div class="mt-4">
+                        <p class="my-2 text-lg md:text-normal lg:text-xl text-justify">{{ site.description }}</p> 
                     </div>
                 </div>
             </div>
