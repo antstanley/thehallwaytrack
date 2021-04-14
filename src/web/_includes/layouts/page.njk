@@ -1,6 +1,8 @@
 {% extends 'layouts/default.njk' %}
 
 {% set title = page.title %}
+{% set feature_image = page.feature_image if page.feature_image else site.cover_image %}
+{% set description = page.excerpt if page.excerpt else site.description %}
 
 {% block content %}
     <article class="container mx-auto">
@@ -19,22 +21,22 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ page.url }}">
     <meta name="twitter:title" content="{{ title }} – {{ site.title }}">
-    <meta name="twitter:description" content="{{ page.excerpt }}">
-    <meta name="twitter:image" content="{{ page.feature_image }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image" content="{{ feature_image }}">
 
     <!--Schema-->
     <link rel="author" href="{{ page.primary_author.website }}">
     <link rel="publisher" href="{{ site.url }}">
     <meta itemprop="name" content="{{ title }} – {{ site.title }}">
-    <meta itemprop="description" content="{{ page.excerpt }}">
-    <meta itemprop="image" content="{{ page.feature_image }}">
+    <meta itemprop="description" content="{{ description }}">
+    <meta itemprop="image" content="{{ feature_image }}">
 
     <!-- Facebook OpenGraph -->
     <meta property="og:url" content="{{ site.url + page.url }}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ title }} – {{ site.title }}">
-    <meta property="og:image" content="{{ page.feature_image }}">
-    <meta property="og:description" content="{{ page.excerpt }}">
+    <meta property="og:image" content="{{ feature_image }}">
+    <meta property="og:description" content="{{ description }}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:locale" content="{{ site.lang }}">
     <meta property="article:author" content="{{ site.url }}">
