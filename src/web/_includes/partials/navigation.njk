@@ -1,0 +1,26 @@
+<nav class="nav-font text-l">
+    <div class="inline-flex flex-wrap justify-center md:justify-between lg:justify-between xl:justify-between">
+        {% if navigation %}
+            {% for item in navigation %}
+                <div class="py-4">
+                    <a class="fg-base px-4" href="{{ item.url }}">
+                        {{ item.title }}
+                    </a>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        {% if site.twitter %}
+            <div class="px-2 py-4">
+                <a href="https://twitter.com/{{ site.twitter | replace("@", "") }}" target="_blank" rel="noopener noreferrer">
+                    {{ icon({ id: 'twitter', width: 24, height: 20}) }}
+                </a>
+            </div>
+        {% endif %}
+    </div>           
+</nav>
+
+                    
+
+                    
+

@@ -1,0 +1,33 @@
+{
+  "name": "thehallwaytrack",
+  "version": "0.0.1",
+  "description": "The Hallway Track website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "debug": "DEBUG=Eleventy* eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antstanley/thehallwaytrack.git"
+  },
+  "keywords": [],
+  "author": "Ant Stanley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antstanley/thehallwaytrack/issues"
+  },
+  "homepage": "https://github.com/antstanley/thehallwaytrack#readme",
+  "dependencies": {
+    "tailwindcss": "^2.1.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "clean-css": "^5.1.2",
+    "jsdom": "^16.5.3",
+    "postcss": "^8.2.10"
+  }
+}

@@ -1,0 +1,164 @@
+@tailwind base;
+
+@tailwind components;
+
+.bg-base {
+  background-color: #cccccc;
+}
+
+.fg-base {
+  color: #000;
+}
+
+.bg-base-1 {
+  background-color: #eeeeee;
+}
+
+.fg-base-1 {
+  color: #242424;
+}
+
+.border-base-1 {
+  border-color: #eeeeee;
+}
+
+.bg-base-2 {
+  background-color: #fff;
+}
+
+.fg-base-2 {
+  color: #161616;
+}
+
+.border-base-2 {
+  border-color: #cbc1b8;
+}
+
+.bg-base-3 {
+  background-color: #909090;
+}
+
+.fg-base-3 {
+  color: #eeeeee;
+}
+
+.bg-base-4 {
+  background-color: #4973f6;
+}
+
+.fg-base-4 {
+  color: #707070;
+}
+
+.fg-base-5 {
+  color: #4973f6;
+}
+
+.bg-base-5 {
+  background-color: #4973f6;
+}
+
+.bg-tag {
+  background-color: #363636;
+}
+
+.bg-gradient {
+  background: rgb(235, 59, 78);
+  background: linear-gradient(
+    180deg,
+    rgba(235, 59, 78, 1) 0%,
+    rgba(255, 80, 125, 1) 50%,
+    rgba(255, 76, 182, 1) 100%
+  );
+}
+
+.fg-tag {
+  color: #fffff8;
+}
+
+.fg-excerpt {
+  color: #484848;
+}
+
+.bg-burple {
+  background: #7289da;
+}
+
+.header-font {
+  font-family: 'Garamond', 'Baskerville', 'Times New Roman', serif;
+}
+
+.nav-font {
+  font-family: 'avenir next', avenir, sans-serif;
+}
+
+.default-font {
+  font-family: 'Garamond', 'Baskerville', 'Times New Roman', serif;
+}
+
+.code-font {
+  font-family: 'PT Mono', 'Consolas', monaco, monospace;
+}
+
+.quote-font {
+  font-family: 'Lucida Console', Monaco, monospace;
+}
+
+.logo {
+  background-image: url('/img/hallway_dark.png');
+}
+
+.h-header {
+  height: 90vh;
+}
+
+.shadow-button {
+  box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-base {
+    background-color: #222;
+  }
+
+  .fg-base {
+    color: #ffffff;
+  }
+
+  .bg-base-1 {
+    background-color: #242424;
+  }
+
+  .fg-base-1 {
+    color: #ffffff;
+  }
+
+  .bg-base-2 {
+    background-color: #fffdd0;
+  }
+
+  .fg-base-2 {
+    color: #242424;
+  }
+
+  .fg-excerpt {
+    color: #b0b0b0;
+  }
+
+  .bg-tag {
+    background-color: #ccccc8;
+  }
+
+  .fg-tag {
+    color: #242424;
+  }
+
+  .logo {
+    background-image: url('/img/hallway_light.png');
+  }
+  .shadow-button {
+    box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.6);
+  }
+}
+
+@tailwind utilities;
