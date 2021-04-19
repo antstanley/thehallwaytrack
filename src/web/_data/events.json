@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Testing in Production",
+    "description": "The how, what and why you would test in production.",
+    "slug": "testing-in-production",
+    "cover_image": "",
+    "speakers": [
+      {
+        "name": "Charity Majors",
+        "title": "CTO",
+        "organisation": "Honeycomb",
+        "image": "",
+        "bio": "Badass"
+      },
+      {
+        "name": "Vlad Ionescu",
+        "title": "Chaotic Genius",
+        "organisation": "",
+        "image": "",
+        "bio": "Also a badass",
+        "moderator": true
+      }
+    ],
+    "time": 1618736400000
+  }
+]

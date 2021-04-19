@@ -85,6 +85,27 @@ module.exports = function (eleventyConfig) {
     }
   })
 
+  const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ]
+
+  eleventyConfig.addFilter('getEventDateTime', timeStamp => {
+    const timeValue = new Date(timeStamp)
+    return `${timeValue.getDate()} ${
+      months[timeValue.getMonth()]
+    } ${timeValue.getFullYear()}  // ${timeValue.getHours()}:${timeValue.getMinutes()}`
+  })
   // eleventyConfig.addPlugin(pluginRSS)
 
   eleventyConfig.addFilter('getReadingTime', text => {

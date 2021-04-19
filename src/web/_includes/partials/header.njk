@@ -1,3 +1,4 @@
+{% from "partials/featured_card.njk" import feature %}
 
 <header class="w-full">
     {% if page.url !== '/' %}
@@ -10,7 +11,7 @@
             </div>
         </div>
     {% else %}
-        <div class="container mx-auto flex flex-wrap items-center mt-16 md:mt-0 h-header">
+        <div class="container mx-auto flex flex-wrap items-center mt-8 md:mt-0 h-header">
             <div class="w-full md:w-1/3">
                 <div class="w-52 lg:w-72 h-52 lg:h-72 mx-auto">
                     {% include 'partials/logo.njk' %}
@@ -22,12 +23,18 @@
                     <div class="mt-4">
                         <p class="my-2 text-lg md:text-normal lg:text-xl text-justify">{{ site.description }}</p> 
                     </div>
+                    <a href="{{ discord.url }}" target="_blank">
+                        <img class="bg-burple mt-8 pb-1 pt-2 px-4 w-40 mx-auto md:mx-0 rounded-2xl shadow-button" src="{{ discord.image }}" alt="Discord logo white"/>
+                    </a>
                 </div>
+
             </div>
             <div class="w-full md:w-1/3">
-                <a href="{{ discord.url }}" target="_blank">
-                    <img class="bg-burple pb-2 pt-3 px-4 w-48 mx-auto rounded-2xl shadow-button" src="{{ discord.image }}" alt="Discord logo white"/>
-                </a>
+                {% for event in events %}
+                    <div class="mx-auto">
+                        {{ feature(event) }}
+                    </div>
+                {% endfor %}
             </div>
         </div>
     {% endif %}

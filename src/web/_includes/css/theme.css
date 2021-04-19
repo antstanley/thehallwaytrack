@@ -167,6 +167,24 @@
   box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.3);
 }
 
+.bg-feature-card {
+  background-image: linear-gradient(
+    135deg,
+    #ff00d1 0%,
+    #ffe634 33%,
+    #5dffe0 70%,
+    #646aff 100%
+  );
+}
+
+.fg-feature-card {
+  color: #000;
+}
+
+.font-card {
+  font-family: 'avenir next', avenir, sans-serif;
+}
+
 @media (prefers-color-scheme: dark) {
   .bg-base {
     background-color: #222;
